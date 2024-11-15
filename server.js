@@ -13,8 +13,8 @@ app.get('/search', (req, res) => {
 app.post('/search', (req, res) => {
     let userMovieTitle = req.body.movieTitle;
 
-
-    let movieUrl = `https://api.themoviedb.org/3/search/movie?query=${userMovieTitle}&api_key=e7a9e6bfd92467045d38420dfe10a2a0`;
+ 
+    let movieUrl = `https://api.themoviedb.org/3/search/movie?api_key=4ca94f8b470d7e34bd3f59c3914295c8&query=${userMovieTitle}`;
     let genresUrl = 'https://api.themoviedb.org/3/genre/movie/list?api_key=4ca94f8b470d7e34bd3f59c3914295c8&language=en-US';
 
     let endpoints = [movieUrl, genresUrl];
